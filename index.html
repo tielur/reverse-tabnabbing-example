@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title></title>
 </head>
 <body>
 
-  This is an example of reverse tabnabbing. The link below links to an external site ( that I control for this example but imagine that this is a malicious site). The link will open up in a new tab using the target="_blank" in the link and the external site will have control of this tab.
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Reverse Tabnabbing Example</h1>
+    <p class="lead">
+      This is an example of reverse tabnabbing. The link below links to an external site ( that I control for this example but imagine that this is a malicious site). The link will open up in a new tab using the target="_blank" in the link and the external site will have control of this tab.
 
 
-  <a href="https://tielur.github.io/malicious-reverse-tabnabbing-example/index.html" target="_blank">malicious link</a>
+      <a href="https://tielur.github.io/malicious-reverse-tabnabbing-example/index.html" target="_blank">malicious link</a>
+    </p>
+    <hr class="my-4">
+    <p>
+      It’s actually pretty easy to fix, you just have to add rel="noopener" to your link, so here's the same link as above but with that rel="noopener". You'll notice that it can't redirect this tab anymore.
 
+      <a href="https://tielur.github.io/malicious-reverse-tabnabbing-example/index.html" target="_blank" rel="noopener">malicious link</a>
+    </p>
+    <p class="lead">
+      More information at: https://www.honeybadger.io/blog/link-vulnerabilities/
+    </p>
+    </div>
+  </div>
 </body>
 </html>
